@@ -1,0 +1,14 @@
+telegram: telegram 
+contact: contact 
+download: download 
+инвестник: инвестник 
+subscribers: subscribers 
+вкладывать: вкладывать 
+ум: ума умом 
+вокруг: вокруг 
+view: view 
+preview: preview 
+channel: channel 
+join: join 
+right: right 
+away: away 
