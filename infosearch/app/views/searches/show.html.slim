@@ -1,0 +1,17 @@
+= form_for :search, url: search_path, method: :get do |f|
+  = f.text_field :search, name: :search
+  = f.submit "Search", class: :button
+
+ul
+  - if @search_data.blank?
+    = "Data Not Found"
+  - else
+    - @search_data.each do |item|
+      - link = link_by_file_name(item[0])
+      - if link.present?
+        li
+          = link_to link, link
+          = " idf-tf = #{item[1]}"
+      - else
+        li
+          = "#{item[0]}: #{item[1]}"
